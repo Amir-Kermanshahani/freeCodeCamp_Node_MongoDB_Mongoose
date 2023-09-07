@@ -103,7 +103,10 @@ const queryChain = (done) => {
   .sort({name: 1})
   .limit(2)
   .select({age: 0})
-  .exec(done(err, data))
+  .exec(function(err, data) {
+    if (err) return console.error(err);
+    done(err, data)
+  })
 };
 
 /** **Well Done !!**
