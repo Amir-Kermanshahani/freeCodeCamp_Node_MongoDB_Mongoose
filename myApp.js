@@ -1,4 +1,6 @@
 require('dotenv').config();
+let mongoose = require('mongoose')
+mongoose.connect('mongodb+srv://Developer:myatlas-001@cluster0.lsljwqu.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 let Person;
