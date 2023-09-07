@@ -40,7 +40,7 @@ const findPeopleByName = (personName, done) => {
 };
 
 const findOneByFood = (food, done) => {
-  let queryObject = {food: {$in : favoriteFoods}}
+  let queryObject = {favoriteFoods: food}
   Person.findOne(queryObject, function(err, data) {
     if (err) return console.error(err);
     done(null , data);
