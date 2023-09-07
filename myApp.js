@@ -25,7 +25,8 @@ const createAndSavePerson = (done) => {
 
 
 
-const createManyPeople = (arrayOfPeople, done) => {
+
+const createManyPeople = (done) => {
   const arrayOfPeople = [
     {
       name: "Zahra",
